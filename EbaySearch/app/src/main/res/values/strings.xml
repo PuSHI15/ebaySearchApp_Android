@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">EbaySearch</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="spinChoice">
+        <item>Best Match</item>
+        <item>Price: Highest First</item>
+        <item>Price+Shipping: Highest First</item>
+        <item>Price+Shipping: Lowest First</item>
+    </string-array>
+    <string name="title_activity_result">ResultActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_detail">detailActivity</string>
+    <string name="title_activity_test">testActivity</string>
+    <string name="title_activity_basic_info">basicInfoActivity</string>
+    <string name="title_activity_seller">sellerActivity</string>
+    <string name="title_activity_shipping">shippingActivity</string>
+    <string name="facebook_app_id">870415093050864</string>
+
+</resources>

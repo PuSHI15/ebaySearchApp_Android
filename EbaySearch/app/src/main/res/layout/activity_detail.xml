@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:id="@+id/imageDisplay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageDisplay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:id="@+id/titleDisplay" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/priceDisplay" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:id="@+id/locationDisplay" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:id="@+id/links">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/topRated"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy Now"
+                android:id="@+id/buynow"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/facebook"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Basic Info"
+            android:id="@+id/basic"
+            android:layout_below="@+id/links"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="28dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELLER"
+            android:id="@+id/seller"
+            android:layout_alignBottom="@+id/basic"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shipping"
+            android:id="@+id/shipping"
+            android:layout_alignBottom="@+id/seller"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/title1"
+            android:layout_below="@+id/basic"
+            android:layout_toLeftOf="@+id/seller"
+            android:layout_toStartOf="@+id/seller"
+            android:layout_marginTop="25dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/title2"
+            android:layout_below="@+id/title1"
+            android:layout_alignLeft="@+id/title1"
+            android:layout_alignStart="@+id/title1"
+            android:layout_marginTop="32dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/title3"
+            android:layout_marginTop="31dp"
+            android:layout_below="@+id/title2"
+            android:layout_alignLeft="@+id/title2"
+            android:layout_alignStart="@+id/title2"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/title4"
+            android:layout_marginTop="29dp"
+            android:layout_below="@+id/title3"
+            android:layout_alignLeft="@+id/title3"
+            android:layout_alignStart="@+id/title3"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/title5"
+            android:layout_below="@+id/title4"
+            android:layout_alignLeft="@+id/title4"
+            android:layout_alignStart="@+id/title4"
+            android:layout_marginTop="31dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/title6"
+            android:layout_below="@+id/title5"
+            android:layout_alignLeft="@+id/title5"
+            android:layout_alignStart="@+id/title5"
+            android:layout_marginTop="33dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/detail1"
+            android:layout_alignTop="@+id/title1"
+            android:layout_toRightOf="@+id/seller"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/detail2"
+            android:layout_alignTop="@+id/title2"
+            android:layout_toRightOf="@+id/seller"
+            android:layout_toEndOf="@+id/seller"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/detail3"
+            android:layout_alignTop="@+id/title3"
+            android:layout_alignLeft="@+id/detail2"
+            android:layout_alignStart="@+id/detail2"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/detail4"
+            android:layout_alignTop="@+id/title4"
+            android:layout_toRightOf="@+id/seller"
+            android:layout_toEndOf="@+id/seller"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/image1"
+            android:layout_alignTop="@+id/detail4"
+            android:layout_alignLeft="@+id/detail3"
+            android:layout_alignStart="@+id/detail3"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/image2"
+            android:layout_alignTop="@+id/title5"
+            android:layout_alignLeft="@+id/detail3"
+            android:layout_alignStart="@+id/detail3"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/detail5"
+            android:layout_alignTop="@+id/title6"
+            android:layout_alignLeft="@+id/detail3"
+            android:layout_alignStart="@+id/detail3"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/image3"
+            android:layout_alignTop="@+id/detail5"
+            android:layout_alignLeft="@+id/detail3"
+            android:layout_alignStart="@+id/detail3"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+</ScrollView>
